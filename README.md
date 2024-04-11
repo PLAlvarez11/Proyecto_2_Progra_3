@@ -6,7 +6,7 @@
 Bienvenido al manual de usuario para el Gestor de Parqueos!
 
 ### Opciones
-![Captura de pantalla 2024-04-10 222806](https://hackmd.io/_uploads/rJHk_ySxR.png)
+[![Menu.png](https://i.postimg.cc/j5YHQYRy/Menu.png)](https://postimg.cc/B8NP4yLv)
 
 1. Insertar Parqueo
  
