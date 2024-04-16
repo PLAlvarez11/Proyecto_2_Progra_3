@@ -48,3 +48,61 @@ Bienvenido al manual de usuario para el Gestor de Parqueos!
     Sale de la aplicación.
     
     [![Captura-de-pantalla-2024-04-15-222412.png](https://i.postimg.cc/X78kMcgG/Captura-de-pantalla-2024-04-15-222412.png)](https://postimg.cc/GH4yGDVd)
+    
+
+
+---
+
+# Manual de Técnico 
+Bienvenido al manual técnico para el Gestor de Parqueos!
+
+1. Introducción
+
+Este manual técnico describe el código Java para la implementación de una matriz ortogonal para administrar información de parqueos. La matriz ortogonal utiliza matrices los datos de los parqueos, lo que permite una gestión eficiente de la memoria y un acceso rápido a los datos por línea y placa.
+
+2. Estructura del código
+
+El código se divide en dos clases principales:
+
+Nodo: Representa un nodo individual en la matriz. Cada posicion contiene información sobre un vehículo, como placa, color, línea, modelo y propietario.
+MatrizOrtogonal: Gestiona la matriz ortogonal en sí, compuesta por una matriz de punteros a nodos. Cada puntero de la matriz apunta al primer nodo de la columna correspondiente a la línea del vehículo.
+
+3. Funcionalidades del código
+
+El código proporciona las siguientes funcionalidades:
+
+*Inserción de datos:* Permite insertar nuevos nodos en la matriz ortogonal, asignando cada nodo a la columna correspondiente a la línea del vehículo.
+*Búsqueda de nodos:* Permite buscar un nodo específico en la matriz ortogonal por su placa y línea.
+*Eliminación de nodos: *Permite eliminar un nodo específico de la matriz ortogonal por su placa y línea.
+4. Descripción detallada de las funciones
+
+4.1 Insertar nodo
+
+La función insertarNodo recibe como parámetros la información del vehículo (placa, color, línea, modelo y propietario) y la inserta en la matriz ortogonal. La función realiza lo siguiente:
+
+Obtiene la columna correspondiente a la línea del vehículo utilizando la función obtenerColumna.
+Recorre la lista de la columna correspondiente hasta encontrar el nodo con la misma placa.
+Si el nodo no existe, crea un nuevo nodo con la información del vehículo y lo inserta en la lista.
+Si el nodo existe, actualiza la información del nodo existente con la nueva información proporcionada.
+4.2 Buscar nodo
+
+La función buscarNodo recibe como parámetros la placa y la línea del vehículo y busca el nodo correspondiente en la matriz ortogonal. La función realiza lo siguiente:
+
+Obtiene la columna correspondiente a la línea del vehículo utilizando la función obtenerColumna.
+Recorre la lista de la columna correspondiente hasta encontrar el nodo con la misma placa.
+Si el nodo se encuentra, devuelve el nodo.
+Si el nodo no se encuentra, devuelve null.
+4.3 Eliminar nodo
+
+La función eliminarNodo recibe como parámetros la placa y la línea del vehículo y elimina el nodo correspondiente de la matriz ortogonal. La función realiza lo siguiente:
+
+Obtiene la columna correspondiente a la línea del vehículo utilizando la función obtenerColumna.
+Recorre la lista de la columna correspondiente hasta encontrar el nodo con la misma placa.
+Si el nodo se encuentra, lo elimina de la lista.
+Si el nodo no se encuentra, no se realiza ninguna acción.
+
+5. Consideraciones adicionales
+
+La implementación de la función obtenerColumna depende del esquema de asignación de columnas a líneas que se utilice en la aplicación.
+El código no incluye validaciones de entrada de datos. Se recomienda implementar validaciones para garantizar la integridad de los datos.
+El código puede optimizarse aún más utilizando técnicas como balanceo de carga y estrategias de búsqueda más eficientes.
