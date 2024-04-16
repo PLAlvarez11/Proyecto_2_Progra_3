@@ -73,6 +73,6 @@ class Nodo {
     }
     
     public String imprimirParqueo() {
-        return "[ Lugar = " + nombreEspacio + "  Placa = " + placa + ']';
+        return "[ Lugar = " + nombreEspacio + "  Placa = " + placa + " ]  ";
     }
 }
